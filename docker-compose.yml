@@ -34,20 +34,6 @@ services:
     depends_on:
       - database
 
-  app:
-    container_name: app
-    build:
-      context: ./app
-      dockerfile: Dockerfile
-    ports:
-      - "3000:3000"
-    stdin_open: true
-    command: npm start
-    networks:
-      - bridge
-    depends_on:
-      - api
-
 networks:
   bridge:
 
