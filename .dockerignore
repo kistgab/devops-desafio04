@@ -1,0 +1,11 @@
+Dockerfile
+.dockerignore
+.gitignore
+README.md
+
+.idea/
+*.iml
+*.iws
+target/
+.sonar/
+.sonarlint/
